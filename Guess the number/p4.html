@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        .resultParas{
+            color: white;
+        }
+        body{
+            background-color: #212121;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            position: relative;
+            left: 90px;
+            font-weight: bolder;
+            color: #0ef;
+        }
+        p{
+            position: relative;
+            top: 20px;
+            left: 50px;
+            font-size: 1.1rem;
+        }
+        label{
+            color: #0ef;
+            font-size: 1.3rem;
+        }
+        #guessField{
+            font-size: 1.4rem;
+            border: 3px solid #0ef;
+            background-color: rgb(34, 26, 26);
+            color: white;
+        }
+        #subt{
+            position: relative;
+            left: 110px;
+            top: 10px;
+            font-size: 1.3rem;
+            border: 3px solid #0ef;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 10px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Guess the Number</h1>
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number</p>
+        <br>
+        <br>
+        <form class="form">
+            <label for="guessField">Guess the number : </label>
+            <input type="text" id="guessField" class="guessField">
+            <br><br>
+            <input type="submit" id="subt" value="Submit guess">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHigh"></p>
+        </div>
+    </div>
+    <script src="p4.js"></script>
+</body>
+</html>
